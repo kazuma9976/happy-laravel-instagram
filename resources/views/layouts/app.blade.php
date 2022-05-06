@@ -9,15 +9,13 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
 
-    <body>
+    <body style="background: url(images/gray.jpg);">
         <header class="mb-4">
             <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
                 @if(Auth::check())
                 <a class="navbar-brand" href="/top">Instagram Clone</a>
                 @else
                 <a class="navbar-brand" href="/">Instagram Clone</a>
-                <li>{!! link_to_route('signup.get', '新規会員登録', [],['class' => 'nav-link']) !!}</li>
-                <li>{!! link_to_route('login', 'ログイン', [],['class' => 'nav-link']) !!}</li>
                 @endif
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
                     <span class="navbar-toggler-icon"></span>

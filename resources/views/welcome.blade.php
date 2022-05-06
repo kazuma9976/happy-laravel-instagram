@@ -1,11 +1,10 @@
 @extends('layouts.app')
 @section('title', '会員制写真投稿サイト')
 @section('content')
-    <div class="text-center text-primary mb-2">
-        <div id="first">Welcome to Instagram Clone!</div>
-        <div id="second">Come on, post your photos!</div>
+    <div class="text-center text-primary mb-5">
+        <h1 class="text-danger" id="first">Come on, post your photos!</h1>
     </div>
-    <div class="row mt-5">
+    <div class="row">
         @foreach($posts as $post)
         <div class="col-sm-3 mb-3"><img src="{{ Storage::disk('s3')->url('uploads/' . $post->image) }}" alt="{{ $post->image }}" class="image_title"></div>
         @endforeach   

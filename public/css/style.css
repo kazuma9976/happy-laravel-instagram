@@ -1,11 +1,12 @@
 @charset "utf-8";
 
 body {
-    background: #FFFAF0;
+    background: url(images/gray.jpg);
 }
 
-#first, #second {
-    font-size: 36px;
+/* welcome.blade.phpのテキストアニメーション */
+#first {
+    font-size: 28px;
 }
 
 /* users.show のイメージアイコン */
@@ -19,7 +20,6 @@ body {
 td img {
     width: 200px;
 }
-
 
 /* 投稿画像一覧(welcome.blade.php) */
 .image_title {

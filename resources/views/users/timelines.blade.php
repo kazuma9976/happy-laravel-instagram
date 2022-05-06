@@ -34,7 +34,7 @@
             {{ $posts->links('pagination::bootstrap-4') }}
         </div>
         @else
-        <h2 class="mt-3 text-center">タイムライン投稿はまだありません</h2>
+        <h2 class="mt-3 text-center text-danger">※タイムライン投稿はまだありません</h2>
         @endif
     </div>
 @endsection

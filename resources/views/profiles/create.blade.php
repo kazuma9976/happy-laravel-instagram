@@ -28,7 +28,7 @@
                 </div>
 
                 <div class="form-group">
-                    {!! Form::label('image', '4. アバターアイコン') !!}<br>
+                    {!! Form::label('image', '4. 画像') !!}<br>
                     {!! Form::file('image') !!}
                 </div>
 
