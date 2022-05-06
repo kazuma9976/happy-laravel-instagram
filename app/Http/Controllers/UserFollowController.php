@@ -20,3 +20,4 @@ class UserFollowController extends Controller
         return back()->with('flash_message', 'フォローを解除しました');
     }
 }
+

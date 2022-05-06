@@ -4,7 +4,9 @@ body {
     background: #FFFAF0;
 }
 
-
+#first, #second {
+    font-size: 36px;
+}
 
 /* users.show のイメージアイコン */
 .image_icon {

@@ -29,7 +29,7 @@
                     {!! Form::password('password_confirmation', ['class' => 'form-control']) !!}
                 </div>
 
-                {!! Form::submit('登録', ['class' => 'offset-sm-3 col-sm-6 btn btn-primary btn-block mt-5']) !!}
+                {!! Form::submit('登録', ['class' => 'btn btn-primary btn-block mt-5']) !!}
             {!! Form::close() !!}
         </div>
     </div>
