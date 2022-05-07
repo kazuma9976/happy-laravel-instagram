@@ -1,8 +1,9 @@
 @charset "utf-8";
 
-body {
-    background: url(images/gray.jpg);
+body { 
+    background-image: url(../images/background.jpg);
 }
+
 
 /* welcome.blade.phpのテキストアニメーション */
 #first {

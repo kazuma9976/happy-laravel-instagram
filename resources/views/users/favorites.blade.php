@@ -1,12 +1,12 @@
 @extends('layouts.app')
-@section('title', 'お気に入り投稿一覧')
+@section('title', 'お気に入り投稿')
 @section('content')
     <div class="text-center">
-        <h1 class="text-primary">{{ $user->name }}さんのお気に入り投稿一覧</h1>
+        <h1 class="text-primary">{{ $user->name }}さんのお気に入り投稿</h1>
     </div>
     @if($posts->total() !== 0)
     <div class="row mt-4">
-        <p class="text-success">現在のお気に入り投稿件数: {{ $posts->total() }}件</p>
+        <p class="text-success">※現在のお気に入り投稿件数: {{ $posts->total() }}件</p>
         <table class="table table-bordered table-striped text-center">
             <tr>
                 <th>ID</th>

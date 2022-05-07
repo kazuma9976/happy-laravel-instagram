@@ -8,14 +8,14 @@
     <div class="text-center">
         <h1 class="text-primary">投稿一覧</h1>
         <div class="row mt-3">
-            <div class="col-sm-6 offset-sm-3">
+            <div class="col-sm-6 offset-sm-3 mt-3">
                 
                 {!! Form::open(['route' => ['posts.search'], 'method' => 'get']) !!}
                     <div class="form-group">
                         {!! Form::label('keyword', 'キーワード検索', ['class' => 'text-danger']) !!}
                         {!! Form::text('keyword', old('title'), ['class' => 'form-control mb-3']) !!}
                     </div>
-                    {!! Form::submit('検索', ['class' => 'btn btn-info btn-block mt-3']) !!}
+                    {!! Form::submit('検索', ['class' => 'btn btn-info btn-block mt-4']) !!}
                 {!! Form::close() !!}
                 
             </div>
@@ -54,7 +54,7 @@
             {{ $posts->links('pagination::bootstrap-4') }}
         </div>
         @else
-        <h2 class="mt-3 text-center text-danger">※投稿はまだありません</h2>
+        <p class="mt-3 text-center text-danger">※投稿はまだありません</p>
         @endif
     </div>
 @endsection

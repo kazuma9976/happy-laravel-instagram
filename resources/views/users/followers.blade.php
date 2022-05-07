@@ -1,11 +1,11 @@
 @extends('layouts.app')
-@section('title',  'フォローワー会員一覧')
+@section('title',  'フォローワー一覧')
 @section('content')
     <div class="text-center">
-        <h1 class="text-primary">フォローワー会員一覧</h1>
+        <h1 class="text-primary">フォローワー一覧</h1>
         @if($users->total() !== 0)
         <div class="row mt-3">
-            <p class="text-success">現在のフォローワー人数: {{ $users->total() }}人</p>
+            <p class="text-success">※現在のフォローワー人数: {{ $users->total() }}人</p>
             <table class="table table-bordered table-striped">
                 <tr>
                     <th>ID</th>

@@ -36,7 +36,7 @@
             {{ $posts->links('pagination::bootstrap-4') }}
         </div>
         @else
-        <h2 class="mt-3 text-center text-danger">※投稿はまだありません</h2>
+        <p class="mt-3 text-center text-danger">※投稿はまだありません</p>
         @endif
     </div>
 @endsection

@@ -18,7 +18,7 @@
     </div>
     @else
     <div class="row mt-5">
-        <p class="col-sm-12 text-center">プロフィールは未設定です</p>
+        <p class="col-sm-12 text-center text-danger">※プロフィールは未設定です</p>
     </div>
     @endif
     

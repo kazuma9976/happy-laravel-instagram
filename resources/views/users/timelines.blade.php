@@ -5,7 +5,7 @@
         <h1 class="text-primary">タイムライン</h1>
         @if($posts->total() !== 0)
         <div class="row mt-3">
-            <p class="text-success">タイムライン投稿件数: {{ $posts->total() }}件</p>
+            <p class="text-success">※現在のタイムライン投稿件数: {{ $posts->total() }}件</p>
             <table class="table table-bordered table-striped">
                 <tr>
                     <th>ID</th>
@@ -34,7 +34,7 @@
             {{ $posts->links('pagination::bootstrap-4') }}
         </div>
         @else
-        <h2 class="mt-3 text-center text-danger">※タイムライン投稿はまだありません</h2>
+        <p class="mt-3 text-center text-danger">※タイムライン投稿はまだありません</p>
         @endif
     </div>
 @endsection

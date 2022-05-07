@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', '会員制写真投稿サイト')
+@section('title', 'Instagram Clone')
 @section('content')
     <div class="text-center text-primary mb-5">
         <h1 class="text-danger" id="first">Come on, post your photos!</h1>

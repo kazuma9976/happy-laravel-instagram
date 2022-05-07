@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     </head>
 
-    <body style="background: url(images/gray.jpg);">
+    <body>
         <header class="mb-4">
             <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
                 @if(Auth::check())
@@ -28,7 +28,7 @@
                         @if(Auth::check())
                         <li class="navbar-text bg-white p-2 mr-5">{!! link_to_route('users.show', Auth::user()->name , ['id' => Auth::id()], ['class' => 'text-success']) !!}</li>
                         <li>{!! link_to_route('users.timelines', 'タイムライン', [],['class' => 'nav-link']) !!}</li>
-                        <li>{!! link_to_route('posts.rankings', 'いいね投稿ラインキング', [],['class' => 'nav-link']) !!}</li>
+                        <li>{!! link_to_route('posts.rankings', 'いいね投稿ランキング', [],['class' => 'nav-link']) !!}</li>
                         <li>{!! link_to_route('users.index', '会員一覧', [],['class' => 'nav-link']) !!}</li>
                         <!-- ユーザーが新規プロフィール作成の場合  -->
                         @if(!Auth::user()->profile()->get()->first())
@@ -37,9 +37,9 @@
                         <li>{!! link_to_route('profiles.edit', 'プロフィール編集', ['id' => Auth::user()->profile()->get()->first()->id ], ['class' => 'nav-link']) !!}</li>
                         @endif
                         <li>{!! link_to_route('posts.create', '新規画像投稿', [],['class' => 'nav-link']) !!}</li>
-                        <li>{!! link_to_route('users.favorites', 'お気に入り投稿一覧', ['id' => Auth::id() ],['class' => 'nav-link']) !!}</li>
-                        <li>{!! link_to_route('users.followings', 'フォロー一覧', ['id' => Auth::id() ],['class' => 'nav-link']) !!}</li>
-                        <li>{!! link_to_route('users.followers', 'フォローワー一覧', ['id' => Auth::id() ],['class' => 'nav-link']) !!}</li>
+                        <li>{!! link_to_route('users.favorites', 'お気に入り投稿', ['id' => Auth::id() ],['class' => 'nav-link']) !!}</li>
+                        <li>{!! link_to_route('users.followings', 'フォロー', ['id' => Auth::id() ],['class' => 'nav-link']) !!}</li>
+                        <li>{!! link_to_route('users.followers', 'フォローワー', ['id' => Auth::id() ],['class' => 'nav-link']) !!}</li>
                         <li>{!! link_to_route('logout.get', 'ログアウト', [],['class' => 'nav-link']) !!}</li>
                         @else
                         <li>{!! link_to_route('signup.get', '新規会員登録', [],['class' => 'nav-link']) !!}</li>
