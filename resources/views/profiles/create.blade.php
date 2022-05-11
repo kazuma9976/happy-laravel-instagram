@@ -2,7 +2,7 @@
 @section('title', 'プロフィール登録')
 @section('content')
     <div class="text-center mt-5">
-        <h1 class="text-primary">{{ Auth::user()->name }}さんのプロフィール作成</h1>
+        <h1 class="text-primary">{{ Auth::user()->name }}さんのプロフィール登録</h1>
     </div>
 
     <div class="row">
@@ -32,7 +32,7 @@
                     {!! Form::file('image') !!}
                 </div>
 
-                {!! Form::submit('プロフィール登録', ['class' => 'offset-sm-3 col-sm-6 btn btn-primary btn-block mt-5']) !!}
+                {!! Form::submit('登録', ['class' => 'offset-sm-3 col-sm-6 btn btn-primary btn-block mt-5']) !!}
             {!! Form::close() !!}
         </div>
     </div>

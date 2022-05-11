@@ -43,6 +43,7 @@
                         @else
                         <img src="{{ asset('images/no_image.jpg') }}" alt="アバター画像は未設定です" class="avatar">
                         @endif
+                        <br>
                         {!! link_to_route('users.show', $post->user->name , ['id' => $post->user->id ],[]) !!}
                     </td>
                     <td>{{ $post->title }}</td>
