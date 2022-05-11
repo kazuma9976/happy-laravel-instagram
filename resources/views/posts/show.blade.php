@@ -60,11 +60,9 @@
             <th>いいねした人の一覧</th>
             <td>
                 @if(count($favorite_users) !== 0)
-                <ul>
                     @foreach($favorite_users as $user)
-                    <li>{!! link_to_route('users.show', $user->name , ['id' => $user->id ],[]) !!}</li>
+                    <p>{!! link_to_route('users.show', $user->name , ['id' => $user->id ],[]) !!}</p>
                     @endforeach
-                </ul>
                 @else
                 <div class="col-sm-12 text-center text-danger">
                     ※いいねした人はまだいません。
