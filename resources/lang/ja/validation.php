@@ -154,6 +154,15 @@ return [
       |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'name'          => '名前',
+        'email'         => 'メールアドレス',
+        'password'      => 'パスワード',
+        'title'         => 'タイトル',
+        'content'       => '内容',
+        'image'         => '画像ファイル',
+        'nickname'      => 'ニックネーム',
+        'introduction'  => '自己紹介'
+    ],
 
 ];

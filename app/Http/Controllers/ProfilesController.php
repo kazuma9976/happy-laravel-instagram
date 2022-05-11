@@ -72,7 +72,7 @@ class ProfilesController extends Controller
         \Auth::user()->profile()->create(['nickname' => $nickname, 'gender' => $gender, 'introduction' => $introduction, 'image' => $image]);
         
         // トップページへリダイレクト
-        return redirect('/top')->with('flash_message', 'プロフィールを作成しました');
+        return redirect('/top')->with('flash_message', 'プロフィールを作成しました!');
     }
 
     /**
@@ -159,7 +159,7 @@ class ProfilesController extends Controller
             $profile->save();
             
             // Topページへリダイレクト
-            return redirect('/top')->with('flash_message', 'プロフィールを更新しました');
+            return redirect('/top')->with('flash_message', 'プロフィールを更新しました!');
         } else {
             return redirect('/top');
         }

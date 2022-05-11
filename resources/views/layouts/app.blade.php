@@ -26,7 +26,7 @@
                     <ul class="navbar-nav">
                         <!-- ユーザーがログインしている場合 -->
                         @if(Auth::check())
-                        <li class="navbar-text bg-white p-2 mr-5">{!! link_to_route('users.show', Auth::user()->name , ['id' => Auth::id()], ['class' => 'text-success']) !!}</li>
+                        <li class="navbar-text bg-white p-2 mr-3">{!! link_to_route('users.show', Auth::user()->name , ['id' => Auth::id()], ['class' => 'text-success']) !!}</li>
                         <li>{!! link_to_route('users.timelines', 'タイムライン', [],['class' => 'nav-link']) !!}</li>
                         <li>{!! link_to_route('posts.rankings', 'いいね投稿ランキング', [],['class' => 'nav-link']) !!}</li>
                         <li>{!! link_to_route('users.index', '会員一覧', [],['class' => 'nav-link']) !!}</li>

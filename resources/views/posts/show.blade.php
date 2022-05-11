@@ -6,18 +6,7 @@
     </div>
     <table class="table table-bordered table-striped text-center mt-5">
         <tr>
-            <th>ID</th>
-            <th>名前</th>
-            <th>タイトル</th>
-            <th>内容</th>
-            <th>画像</th>
-            <th>投稿日時</th>
-            <th>いいね/いいね解除</th>
-            <th>いいねの数</th>
-            <th>いいねした人の一覧</th>
-        </tr>
-        <tr>
-            <td>{{ $post->id }}</td>
+            <th class="col42">名前</th>
             <td>
                 <p>
                 <!--その投稿のユーザーのプロフィールがあるならばアバターアイコンを表示させる-->
@@ -31,10 +20,26 @@
                 </p>
                 {!! link_to_route('users.show', $post->user->name, ['id' => $post->user->id], []) !!}
             </td>
+        </tr>
+        <tr>
+            <th>タイトル</th>
             <td>{{ $post->title }}</td>
+        </tr>
+        <tr>
+            <th>内容</th>
             <td>{{ $post->content }}</td>
+            
+        </tr>
+        <tr>
+            <th>画像</th>
             <td><img src="{{ Storage::disk('s3')->url('uploads/' . $post->image) }}" alt="{{ $post->image }}"></td>
+        </tr>
+        <tr>
+            <th>投稿日時</th>
             <td>{{ $post->created_at }}</td>
+        </tr>
+        <tr>
+            <th>いいね/いいね解除</th>
             <td>
                 @if(!Auth::user()->is_favorite($post->id))
                 {!! Form::open(['route' => ['posts.favorite', 'id' => $post->id ]]) !!}
@@ -46,13 +51,25 @@
                 {!! Form::close() !!}
                 @endif
             </td>
-            <td>{{ count($favorite_users) }}いいね</td>
+        </tr>
+        <tr>
+            <th>いいねの数</th>
+            <td class="text-success">{{ count($favorite_users) }} 個</td>
+        </tr>
+        <tr>
+            <th>いいねした人の一覧</th>
             <td>
+                @if(count($favorite_users) !== 0)
                 <ul>
                     @foreach($favorite_users as $user)
                     <li>{!! link_to_route('users.show', $user->name , ['id' => $user->id ],[]) !!}</li>
                     @endforeach
                 </ul>
+                @else
+                <div class="col-sm-12 text-center text-danger">
+                    ※いいねした人はまだいません。
+                </div>
+                @endif
             </td>
         </tr>
     </table>
@@ -71,41 +88,40 @@
     <div class="text-center text-success mt-5">
         <h2>コメント一覧</h2>
     </div>
-    @if(count($comments) !== 0)
-    <table class="table table-bordered table-striped text-center mt-5">
-        <tr>
-            <th>ID</th>
-            <th>名前</th>
-            <th>コメント内容</th>
-            <th>投稿日時</th>
-        </tr>
-        @foreach($comments as $comment)
-        <tr>
-            <td>{{ $comment->id }}</td>
-            <td>{{ $comment->user->name }}</td>
-            <td>{{ $comment->content }}</td>
-            <td>{{ $comment->created_at }}</td>
-        </tr>
-        @endforeach
-    </table>
-    @else
+    <div class="row">
+        @if(count($comments) !== 0)
+        <table class="table table-bordered table-striped text-center mt-5">
+            <tr>
+                <th>ID</th>
+                <th>名前</th>
+                <th>コメント内容</th>
+                <th>投稿日時</th>
+            </tr>
+            @foreach($comments as $comment)
+            <tr>
+                <td>{{ $comment->id }}</td>
+                <td>{{ $comment->user->name }}</td>
+                <td>{{ $comment->content }}</td>
+                <td>{{ $comment->created_at }}</td>
+            </tr>
+            @endforeach
+        </table>
+        @else
+    </div>
     <div class="row mt-5">
         <div class="col-sm-12 text-center text-danger">
             ※コメントはまだありません。
         </div>
     </div>
-    @endif
-    <div class="row mt-5 mb-5">
-        <div class="col-sm-6 offset-sm-3">
-
-            {!! Form::open(['route' => ['comments.store', 'id' => $post->id ]]) !!}
-                <div class="form-group">
-                    {!! Form::label('content', 'コメント記入:') !!}
-                    {!! Form::text('content', old('content'), ['class' => 'form-control']) !!}
-                </div>
-                {!! Form::submit('コメント投稿', ['class' => 'btn btn-primary btn-block mt-5']) !!}
-            {!! Form::close() !!}
-        </div>
+        @endif
+    <div class="col-sm-6 offset-sm-3 mt-4 mb-5">
+        {!! Form::open(['route' => ['comments.store', 'id' => $post->id ]]) !!}
+            <div class="form-group">
+                {!! Form::label('content', 'コメント記入:') !!}
+                {!! Form::text('content', old('content'), ['class' => 'form-control']) !!}
+            </div>
+            {!! Form::submit('コメント投稿', ['class' => 'btn btn-primary btn-block mt-4']) !!}
+        {!! Form::close() !!}
     </div>
     
 @endsection

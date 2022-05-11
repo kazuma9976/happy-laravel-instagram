@@ -32,7 +32,7 @@
                     {!! Form::file('image') !!}
                 </div>
 
-                {!! Form::submit('プロフィール更新', ['class' => 'offset-sm-3 col-sm-6 btn btn-primary btn-block mt-5']) !!}
+                {!! Form::submit('更新', ['class' => 'offset-sm-3 col-sm-6 btn btn-primary btn-block mt-5']) !!}
             {!! Form::close() !!}
         </div>
     </div>

@@ -70,7 +70,7 @@ class PostsController extends Controller
         \Auth::user()->posts()->create(['title' => $title, 'content' => $content, 'image' => $image]);
         
         // Topページへリダイレクト
-        return redirect('/top')->with('flash_message', '新規画像投稿が完了しました');
+        return redirect('/top')->with('flash_message', '新規画像投稿が完了しました!');
     }
 
     /**
@@ -177,7 +177,7 @@ class PostsController extends Controller
             // データベースから削除
             $post->delete();
             // リダイレクト
-            return redirect('/top')->with('flash_message', '投稿ID: ' . $post->id . ' の投稿を削除しました');
+            return redirect('/top')->with('flash_message', '投稿ID: ' . $post->id . ' の投稿を削除しました!');
         } else {
             return redirect('/top');
         }

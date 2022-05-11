@@ -51,7 +51,7 @@
         <h2 class="text-success">{{ $user->name }} さんの投稿一覧</h2>
     </div>
      <div class="row mt-5">
-        <table class="table table-bordered table-striped">
+        <table class="table table-bordered table-striped text-center">
             <tr>
                 <th>ID</th>
                 <th>名前</th>
