@@ -6,7 +6,7 @@
     </div>
     <table class="table table-bordered table-striped text-center mt-5">
         <tr>
-            <th class="col42">名前</th>
+            <th class="col42">投稿者</th>
             <td>
                 <p>
                 <!--その投稿のユーザーのプロフィールがあるならばアバターアイコンを表示させる-->
