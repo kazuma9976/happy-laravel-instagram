@@ -1,0 +1,77 @@
+[33mcommit 6b4a3028961efaef777d569a6a49a80a5a06398f[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 10:56:42 2022 +0900
+
+    テスト用データベース作成完了
+
+[33mcommit a3511d0d3887322464f3662c6777b6bdd5503762[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 10:50:17 2022 +0900
+
+    CircleCI環境設定の修正
+
+[33mcommit af9490a1a8f8ba2d829b84e32eea9d5e789f6be1[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 10:45:11 2022 +0900
+
+    CircleCI環境設定完了
+
+[33mcommit aec0e0a4afb068fb1a893da7a39ed0dfdc115935[m[33m ([m[1;31mheroku/main[m[33m)[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 09:48:03 2022 +0900
+
+    画像プレビュー、バリデーション、マイグレーション修正
+
+[33mcommit 42dc6482d521632961e42fdd9af10f3ad95c7344[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Thu May 12 10:41:19 2022 +0900
+
+    /Laravel-instagram/app/User.phpタイムライン表示データメソッド訂正
+
+[33mcommit 6e1b8cb3b8ad4ebb5b2d53d9e3d1b94982d03976[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Wed May 11 11:37:05 2022 +0900
+
+    一部文字を訂正
+
+[33mcommit c0b6597d393ef80533fc8367501b42ab969880e0[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Wed May 11 11:29:23 2022 +0900
+
+    各種文字を訂正
+
+[33mcommit 8fcf2acbaa8bf6c594b44feb3c3abdabb58e509e[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Wed May 11 11:15:16 2022 +0900
+
+    投稿詳細のレイアウト、エラー・フラッシュメッセージのレイアウト、日本語訳修正
+
+[33mcommit a701e0fc972aee19364187eb035e3a789c755ed7[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Sat May 7 10:09:58 2022 +0900
+
+    HTML/CSS微調整完了
+
+[33mcommit 9badacf6669f605072e2b233046b2470d5cdab61[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Fri May 6 21:15:20 2022 +0900
+
+    Heroku用にProcfileを追加
+
+[33mcommit 7a45b122d7b4c11a583432aeb38020bc4728f846[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Fri May 6 21:01:08 2022 +0900
+
+    css微調整
+
+[33mcommit b4bbe0bc1f8080d66b279ee53ed98f5c78cad28e[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Fri May 6 18:08:29 2022 +0900
+
+    navの調整、テキストアニメーションの追加
+
+[33mcommit 4526fb8b452bb26ee4d7b5290131659b4b6e8ddc[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Fri May 6 17:20:06 2022 +0900
+
+    再コミット
