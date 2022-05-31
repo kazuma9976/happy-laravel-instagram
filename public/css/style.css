@@ -10,6 +10,16 @@ body {
     font-size: 28px;
 }
 
+/* メニューバーを固定 */
+#menu {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+
 /* users.show のイメージアイコン */
 .image_icon {
     width: 100%;
@@ -25,19 +35,22 @@ td img {
 /* 投稿画像一覧(welcome.blade.php) */
 .image_title {
     width: 100%;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px #444444;
 }
 
 /* アバターアイコンの調整 */
 .avatar {
-    width: 50px;
+    width: 60px;
+    height: 50px;
     border-radius: 5px;
 }
 
-.no_avatar {
-    width: 50px;
-    border-radius: 5px;
+/* 画像登録のプレビュー表示 */
+#preview img {
+    width: 250px;
+    height: 180px;
 }
 
 /*media query*/

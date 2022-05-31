@@ -160,7 +160,7 @@ return [
         'password'      => 'パスワード',
         'title'         => 'タイトル',
         'content'       => '内容',
-        'image'         => '画像ファイル',
+        'image'         => '画像',
         'nickname'      => 'ニックネーム',
         'introduction'  => '自己紹介'
     ],

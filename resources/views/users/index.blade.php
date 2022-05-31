@@ -19,12 +19,17 @@
                 <td>
                     <!--そのユーザーのプロフィールがあるならばアバターアイコンを表示させる-->
                     @if($user->profile)
-                    <img src="{{ Storage::disk('s3')->url('uploads/' . $user->profile->image) }}" alt="{{ $user->profile->image }}" class="avatar">
-                    <!-- プロフィールが未設定の場合は、no_image画像を表示させる。 -->
+                        @if($user->profile->image)
+                        <img src="{{ Storage::disk('s3')->url('uploads/' . $user->profile->image) }}" alt="{{ $user->profile->image }}" class="avatar">
+                        <!-- プロフィールが未設定の場合は、no_image画像を表示させる。 -->
+                        @else
+                        <img src="{{ asset('images/no_image.jpg') }}" alt="アバター画像は未設定です。" class="avatar">
+                        @endif
+                        {!! link_to_route('users.show', $user->name, ['id' => $user->id], []) !!}
                     @else
-                    <img src="{{ asset('images/no_image.jpg') }}" alt="アバター画像は未設定です。" class="no_avatar">
-                    @endif
+                    <img src="{{ asset('images/no_image.jpg') }}" alt="画像資料はありません" class="avatar">
                     {!! link_to_route('users.show', $user->name, ['id' => $user->id], []) !!}
+                    @endif
                 </td>
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->created_at }}</td>

@@ -61,12 +61,18 @@ class ProfilesController extends Controller
         $gender = $request->input('gender');
         $introduction = $request->input('introduction');
         $file = $request->file('image');
-        
-        // S3用
-        $path = Storage::disk('s3')->putFile('/uploads', $file, 'public');
-        
-        // パスから、最後の「ファイル名.拡張子」の部分だけ取得
-        $image = basename($path);
+    
+        if($file !== null){
+            // S3用
+            $path = Storage::disk('s3')->putFile('/uploads', $file, 'public');
+     
+            // パスから、最後の「ファイル名.拡張子」の部分だけ取得
+            $image = basename($path);
+            
+        } else {
+            // 画像を選択しない場合は空にする。
+            $image = '';
+        }
         
         // 入力情報をもとに新しいインスタンスを作成
         \Auth::user()->profile()->create(['nickname' => $nickname, 'gender' => $gender, 'introduction' => $introduction, 'image' => $image]);

@@ -21,7 +21,10 @@
 
                 <div class="form-group">
                     {!! Form::label('image', '3. 画像') !!}<br>
-                    {!! Form::file('image') !!}
+                    {!! Form::file('image', ['id' => 'preview-uploader']) !!}
+                    
+                    <!-- 画像プレビュー -->
+                    <div id="preview" class="mt-3"></div>
                 </div>
 
                 {!! Form::submit('更新', ['class' => 'offset-sm-3 col-sm-6 btn btn-primary mt-5']) !!}

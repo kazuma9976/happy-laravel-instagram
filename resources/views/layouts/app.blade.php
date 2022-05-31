@@ -11,7 +11,7 @@
 
     <body>
         <header class="mb-4">
-            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <nav id="menu" class="navbar navbar-expand-sm navbar-dark bg-primary">
                 @if(Auth::check())
                 <a class="navbar-brand" href="/top">Instagram Clone</a>
                 @else
@@ -27,16 +27,17 @@
                         <!-- ユーザーがログインしている場合 -->
                         @if(Auth::check())
                         <li class="navbar-text bg-white p-2 mr-3">{!! link_to_route('users.show', Auth::user()->name , ['id' => Auth::id()], ['class' => 'text-success']) !!}</li>
-                        <li>{!! link_to_route('users.timelines', 'タイムライン', [],['class' => 'nav-link']) !!}</li>
-                        <li>{!! link_to_route('posts.rankings', 'いいね投稿ランキング', [],['class' => 'nav-link']) !!}</li>
-                        <li>{!! link_to_route('users.index', '会員一覧', [],['class' => 'nav-link']) !!}</li>
                         <!-- ユーザーが新規プロフィール作成の場合  -->
                         @if(!Auth::user()->profile()->get()->first())
                         <li>{!! link_to_route('profiles.create', 'プロフィール登録', [], ['class' => 'nav-link']) !!}</li>
+                        <!-- ユーザーがプロフィールを更新する場合 -->
                         @else
                         <li>{!! link_to_route('profiles.edit', 'プロフィール編集', ['id' => Auth::user()->profile()->get()->first()->id ], ['class' => 'nav-link']) !!}</li>
                         @endif
+                        <li>{!! link_to_route('users.index', '会員一覧', [],['class' => 'nav-link']) !!}</li>
                         <li>{!! link_to_route('posts.create', '新規画像投稿', [],['class' => 'nav-link']) !!}</li>
+                        <li>{!! link_to_route('users.timelines', 'タイムライン', [],['class' => 'nav-link']) !!}</li>
+                        <li>{!! link_to_route('posts.rankings', 'いいね投稿ランキング', [],['class' => 'nav-link']) !!}</li>
                         <li>{!! link_to_route('users.favorites', 'お気に入り投稿', ['id' => Auth::id() ],['class' => 'nav-link']) !!}</li>
                         <li>{!! link_to_route('users.followings', 'フォロー', ['id' => Auth::id() ],['class' => 'nav-link']) !!}</li>
                         <li>{!! link_to_route('users.followers', 'フォローワー', ['id' => Auth::id() ],['class' => 'nav-link']) !!}</li>
@@ -50,7 +51,7 @@
             </nav>
         </header>
         
-        <div class="container">
+        <div class="container mt-5 mb-5 pt-4">
             @include('commons.flash_message')
             @include('commons.error_messages')
             @yield('content')
