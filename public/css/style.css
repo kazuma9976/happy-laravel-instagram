@@ -10,16 +10,6 @@ body {
     font-size: 28px;
 }
 
-/* メニューバーを固定 */
-#menu {
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 100;
-}
-
-
 /* users.show のイメージアイコン */
 .image_icon {
     width: 100%;

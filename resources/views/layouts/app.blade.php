@@ -11,7 +11,7 @@
 
     <body>
         <header class="mb-4">
-            <nav id="menu" class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
                 @if(Auth::check())
                 <a class="navbar-brand" href="/top">Instagram Clone</a>
                 @else
@@ -51,7 +51,7 @@
             </nav>
         </header>
         
-        <div class="container mt-5 mb-5 pt-4">
+        <div class="container mb-5">
             @include('commons.flash_message')
             @include('commons.error_messages')
             @yield('content')
