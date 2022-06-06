@@ -25,7 +25,6 @@ td img {
 /* 投稿画像一覧(welcome.blade.php) */
 .image_title {
     width: 100%;
-    height: 100%;
     border-radius: 10px;
     box-shadow: 0 0 10px #444444;
 }
@@ -33,14 +32,12 @@ td img {
 /* アバターアイコンの調整 */
 .avatar {
     width: 60px;
-    height: 50px;
     border-radius: 5px;
 }
 
 /* 画像登録のプレビュー表示 */
 #preview img {
     width: 250px;
-    height: 180px;
 }
 
 /*media query*/
