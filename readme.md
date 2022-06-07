@@ -9,9 +9,6 @@
 実際にエンジニアの知り合いに紹介して、Laravelの基本的な機能がしっかり盛り込まれていることを評価していただいたり、家族や友人にも使ってもらうこともあります。
 Herokuにデプロイしているので、よろしければこちらをご覧くださり、ぜひ、実際に操作していただきたいです。
 
-・Heroku
-https://larabel-instagram-again.herokuapp.com/
-
 ## 2. 技術要素
 
 - 開発環境 AWS Cloud9 / Amazon Linux AMI
@@ -23,7 +20,7 @@ https://larabel-instagram-again.herokuapp.com/
 - Laravel Framework 5.8.38
 - 画像の保存 AWS / S3
 - バージョン管理 Git / GitHub
-- デプロイ Heroku
+- デプロイ Heroku: https://larabel-instagram-again.herokuapp.com/
 
 ## 2. 機能一覧
 #### (1) ユーザー関連
