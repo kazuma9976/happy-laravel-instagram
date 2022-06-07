@@ -77,7 +77,7 @@
     </div>
         {!! Form::open(['route' => ['posts.destroy', 'id' => $post->id ], 'method' => 'DELETE']) !!}
     <div class="row mt-3">
-            {!! Form::submit('削除', ['class' => 'btn btn-danger btn-block offset-sm-3 col-sm-6']) !!}
+            {!! Form::submit('削除', ['class' => 'btn btn-danger btn-block offset-sm-3 col-sm-6', 'onclick' => 'return confirm("投稿を削除します。よろしいですか？")']) !!}
     </div>
         {!! Form::close() !!}
     @endif
