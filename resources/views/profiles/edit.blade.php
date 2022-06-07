@@ -16,10 +16,10 @@
 
                 <div class="form-group">
                     {!! Form::label('gender', '2. 性別') !!}<br>
+                    {!! Form::radio('gender', 'man', $profile->gender === 'man' ? true : false, ['id' => 'man', 'class' => 'offset-2']) !!}
                     {!! Form::label('man', '男性') !!}
-                    {!! Form::radio('gender', 'man', $profile->gender === 'man' ? true : false, ['id' => 'man']) !!}
+                    {!! Form::radio('gender', 'woman', $profile->gender === 'woman' ? true : false, ['id' => 'woman', 'class' => 'offset-2']) !!}
                     {!! Form::label('woman', '女性') !!}
-                    {!! Form::radio('gender', 'woman', $profile->gender === 'woman' ? true : false, ['id' => 'woman']) !!}
                 </div>
 
                 <div class="form-group">
@@ -27,12 +27,21 @@
                     {!! Form::text('introduction', $profile->introduction ? $profile->introduction : old('introduction'), ['class' => 'form-control']) !!}
                 </div>
 
-                <div class="form-group">
+                <!--そのユーザーのプロフィールがあるならばアバターアイコンを表示させる-->
+                @if($profile->image)
+                <p class="text-success mt-4">※現在登録されている画像</p>
+                <img src="{{ Storage::disk('s3')->url('uploads/' . $profile->image) }}" alt="{{ $profile->image }}" class="now_avatar">
+                <!--そうでなければno_image画像を表示させる。 -->
+                @else
+                <p class="text-danger mt-4">※プロフィール画像は未設定です</p>
+                <img src="{{ asset('images/no_image.jpg') }}" alt="アバター画像は未設定です。" class="now_avatar">
+                @endif
+                
+                <div class="form-group mt-4">
                     {!! Form::label('image', '4. 画像') !!}<br>
-                    {!! Form::file('image', ['id' => 'preview-uploader']) !!}
-                    
+                    {!! Form::file('image', ['class' => 'form-control', 'id' => 'preview-uploader']) !!}
                     <!-- 画像プレビュー -->
-                    <div id="preview" class="mt-3"></div>
+                    <div id="preview" class="mt-4"></div>
                 </div>
 
                 {!! Form::submit('更新', ['class' => 'offset-sm-3 col-sm-6 btn btn-primary btn-block mt-5']) !!}

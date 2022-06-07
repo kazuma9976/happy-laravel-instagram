@@ -18,8 +18,11 @@ class PostsController extends Controller
     {
         // Postモデルを使って全投稿を降順で取得
         $posts = Post::orderBy('id', 'desc')->paginate(10);
+        // 検索キーワードは空文字の設定
+        $keyword = '';
+        
         // viewの呼び出し
-        return view('top', compact('posts'));
+        return view('top', compact('posts', 'keyword'));
     }
 
     /**
@@ -189,7 +192,7 @@ class PostsController extends Controller
         // いいね数が多い順に投稿のデータを取得(今回は上位3位)
         // Postモデルにある favorite_usersというリレーション名を使う。
         // ref) https://poppotennis.com/posts/laravel-withcount
-        $posts = Post::withCount('favorite_users')->orderBy('favorite_users_count', 'desc')->paginate();
+        $posts = Post::withCount('favorite_users')->orderBy('favorite_users_count', 'desc')->paginate(3);
         
         // viewの呼び出し
         return view('posts.rankings', compact('posts'));
@@ -198,20 +201,30 @@ class PostsController extends Controller
     // キーワード検索
     public function search(Request $request)
     {
-        // validation
-        $this->validate($request, ['keyword' => 'required']);
-        
         // 入力されたキーワードを取得
         $keyword = $request->input('keyword');
         
-        // 検索(title、またはcontentで部分一致検索)
         // ref 1) https://biz.addisteria.com/laravel_where/#toc4
         // ref 2) https://style.potepan.com/articles/22072.html#LIKE
-        $posts = Post::where('title', 'like', '%' . $keyword . '%')->orwhere('content', 'like', '%' . $keyword . '%')->paginate(10);
-        // フラッシュメッセージのセット
-        $flash_message = '検索キーワード: 『 '. $keyword .' 』に' . $posts->count() . '件ヒットしました!!';
+        // 検索(title、またはcontentで部分一致検索)
+        $posts = Post::where('title', 'like', '%' . $keyword . '%')
+                        ->orwhere('content', 'like', '%' . $keyword . '%')
+                        ->paginate(10);
+                        
+        // キーワードがなければフラッシュメッセージをnull
+        if($keyword === null) {
+           $flash_message = null;
+        
+        // キーワードがヒットしなければ
+        } else if($posts->count() === 0) {
+            $flash_message = '検索キーワード: 『 ' . $keyword . ' 』に何もヒットしませんでした';
+            
+        } else {
+            // フラッシュメッセージのセット
+            $flash_message = '検索キーワード: 『 ' . $keyword . ' 』に' . $posts->count() . '件ヒットしました';
+        }
         
         // viewの呼び出し
-        return view('top', compact('posts', 'flash_message'));
+        return view('top', compact('posts', 'keyword', 'flash_message'));
     }
 }

@@ -18,13 +18,16 @@
                     {!! Form::label('content', '2. 内容') !!}
                     {!! Form::text('content', $post->content ? $post->content : old('content'), ['class' => 'form-control']) !!}
                 </div>
+                
+                <!-- 現在投稿されている画像を表示 -->
+                <p class="text-success mt-4">※現在登録されている画像</p>
+                <img src="{{ Storage::disk('s3')->url('uploads/' . $post->image) }}" alt="{{ $post->image }}" class="now_img">
 
-                <div class="form-group">
+                <div class="form-group mt-4">
                     {!! Form::label('image', '3. 画像') !!}<br>
-                    {!! Form::file('image', ['id' => 'preview-uploader']) !!}
-                    
+                    {!! Form::file('image', ['class' => 'form-control', 'id' => 'preview-uploader']) !!}
                     <!-- 画像プレビュー -->
-                    <div id="preview" class="mt-3"></div>
+                    <div id="preview" class="mt-4"></div>
                 </div>
 
                 {!! Form::submit('更新', ['class' => 'offset-sm-3 col-sm-6 btn btn-primary mt-5']) !!}

@@ -13,7 +13,7 @@
                 {!! Form::open(['route' => ['posts.search'], 'method' => 'get']) !!}
                     <div class="form-group">
                         {!! Form::label('keyword', 'キーワード検索', ['class' => 'text-danger']) !!}
-                        {!! Form::text('keyword', old('title'), ['class' => 'form-control mb-3']) !!}
+                        {!! Form::search('keyword', $keyword, ['class' => 'form-control mb-3', 'placeholder' => 'タイトル、内容で検索可能']) !!}
                     </div>
                     {!! Form::submit('検索', ['class' => 'btn btn-info btn-block mt-4']) !!}
                 {!! Form::close() !!}

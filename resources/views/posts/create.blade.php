@@ -21,7 +21,7 @@
 
                 <div class="form-group">
                     {!! Form::label('image', '3. 画像') !!}<br>
-                    {!! Form::file('image', ['id' => 'preview-uploader']) !!}
+                    {!! Form::file('image', ['class' => 'form-control', 'id' => 'preview-uploader']) !!}
                     
                     <!-- 画像プレビュー -->
                     <div id="preview" class="mt-3"></div>

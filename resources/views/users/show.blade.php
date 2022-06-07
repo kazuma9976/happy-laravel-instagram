@@ -7,7 +7,11 @@
     @if($profile)
     <div class="row mt-5">
         <div class="offset-sm-2 col-sm-3">
+            @if($profile->image)
             <img src="{{ Storage::disk('s3')->url('uploads/' . $profile->image) }}" alt="{{ $profile->image }}" class="image_icon">
+            @else
+            <img src="{{ asset('images/no_image.jpg') }}" alt="アバター画像は未設定です。" class="image_icon">
+            @endif
         </div>
         <div class="offset-sm-1 col-sm-3 pt-3">
             <p>ニックネーム / {{ $profile->nickname }}</p>

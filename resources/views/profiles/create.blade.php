@@ -16,10 +16,10 @@
 
                 <div class="form-group">
                     {!! Form::label('gender', '2. 性別') !!}<br>
+                    {!! Form::radio('gender', 'man', true, ['id' => 'man', 'class' => 'offset-1']) !!}
                     {!! Form::label('man', '男性') !!}
-                    {!! Form::radio('gender', 'man', true, ['id' => 'man']) !!}
+                    {!! Form::radio('gender', 'woman', false, ['id' => 'woman', 'class' => 'offset-2']) !!}
                     {!! Form::label('woman', '女性') !!}
-                    {!! Form::radio('gender', 'woman', false, ['id' => 'woman']) !!}
                 </div>
 
                 <div class="form-group">
@@ -29,7 +29,7 @@
 
                 <div class="form-group">
                     {!! Form::label('image', '4. 画像') !!}<br>
-                    {!! Form::file('image', ['id' => 'preview-uploader']) !!}
+                    {!! Form::file('image', ['class' => 'form-control', 'id' => 'preview-uploader']) !!}
                     
                     <!-- 画像プレビュー -->
                     <div id="preview" class="mt-3"></div>
