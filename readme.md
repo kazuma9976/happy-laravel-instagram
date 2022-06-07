@@ -1,72 +1,103 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# 精神障害者向けの相談記録アプリ
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+## 1. このアプリの概要
+これは、私が精神保健福祉士として、精神科病院、地域の就労支援事業所や地域活動支援センターで勤務した経験を踏まえて開発した相談記録アプリです。
+このアプリは、精神障害者の地域での相談支援を行う現場の職員が使うことを想定しています。
+このアプリの目的は、事務作業(日々の相談記録作成など)を効率化し、業務の生産性を高め、利用者の情報共有を円滑化し、現場の職員が人の力でしかできない仕事(利用者の支援に関する会議、自己研鑽のための研修・出張への積極的な参加など)に注力できるようにするためのものです。
+アプリの使い方としては、現場の職員がこのアプリにログインし、日々新たに関わる利用者を登録し、面談や関係機関(精神科病院、役所の生活保護担当、ヘルパーなど)とのケース会議などの記録を書いて登録していくという流れになっています。
+また、日々の業務を記録する業務日誌のコンテンツもあります。
+これらの一連の業務を重ねる中で、日々データが増えていくため、データを迅速に見つけて記録と確認ができるようにするために利用者、相談記録、業務日誌に検索機能とブックマーク機能を付けております。
+相談記録については、職員同士で検討した支援の方向性や自分用メモのために、コメントを記入できる機能も備わっています。
+この業界では、日々、職員が仕事に追われがちになるケースがあり、孤立して仕事をしてまう傾向があり、各事業所の課題の一つとなることが多いです。
+そのため、少しでも職員同士のつながりを作るツールがあればと思い、職員プロフィールを盛り込んでいます。
+このアプリの最大の特徴は、スマートフォンやタブレット端末のレスポンシブデザインにも対応しており、外出先や、在宅でも相談記録が手軽に作成できる点です。
+特に福祉業界では、パソコンどころか未だに紙媒体で利用者のデータを保管しており、職場の事務所に行かなければ事務作業ができない事業所が多くあります。
+このアプリが、これからのコロナの時代に合わせた障害福祉の分野の働き方を提示するきっかけになればと切に願っております。
+以下、具体的な技術要素をまとめていますのでそちらもご覧いただければ幸いです。
 
-## About Laravel
+## 2. 技術要素
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- 開発環境 AWS Cloud9 / Amazon Linux AMI
+- HTML5/CSS3
+- Bootstrap 4.3.1
+- JavaScript / jQuery 3.3.1
+- PHP 7.2.34
+- MySQL 5.5.62
+- Laravel Framework 5.8.38
+- 画像の保存 AWS / S3
+- バージョン管理 Git / GitHub
+- デプロイ Heroku
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 2. 機能一覧
+#### (1) 職員関連
+- パスワード付き職員登録機能
+- 職員一覧表示・職員プロフィール詳細表示機能
+- 職員プロフィールの登録・編集機能
+- 職員プロフィールに職員が過去に登録した利用者・相談記録・業務日誌の一覧を表示させる機能
+- ブックマークした利用者・相談記録・業務日誌の一覧を表示させる機能
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+#### (2) 利用者関連
+- ログイン・ログアウト機能
+- 利用者一覧表示機能
+- 利用者詳細表示機能
+- 利用者詳細情報の登録・編集・削除機能
+- 利用者検索機能
+- 利用者のブックマーク追加・解除機能
+- 各利用者の相談記録一覧表示機能
+- 各相談記録の詳細表示機能
+- 各相談記録の登録・編集・削除機能
+- 相談記録の検索機能
+- 相談記録のブックマーク追加・解除機能
+- 各利用者の各相談記録に対するコメント投稿機能(公開範囲を全体公開、または自分のみに選択可能)
 
-## Learning Laravel
+#### (3) 業務日誌関連
+- 業務日誌一覧表示機能
+- 業務日誌の詳細表示機能
+- 業務日誌の登録・編集・削除機能
+- 業務日誌のブックマーク追加・解除機能
+- 業務日誌の検索機能
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+#### (4) その他
+- 各種フラッシュメッセージ表示機能
+- 各種入力値に関するバリデーション機能
+- 不正アクセス防止機能
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## 3. このアプリのデータベース設計図
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
+## 4. このアプリの画像資料
+※コンテンツが多いため一部を紹介いたします。
 
-## Contributing
+##### ⓵最初の画面
+![最初の画面](/public/images/sample_1.jpg)
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+##### ⓶ログイン後のトップ画面
+![ログイン後のトップ画面(投稿一覧) ](/public/images/sample_2.jpg)
 
-## Security Vulnerabilities
+##### ⓷ユーザーのプロフィール画面
+![職員プロフィール](/public/images/sample_3.jpg)
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+##### ⓸投稿の詳細画面」
+![投稿の詳細画面](/public/images/sample_4.jpg)
 
-## License
+##### ⓹いいね投稿ランキング画面
+![いいね投稿ランキング](/public/images/sample_5.jpg)
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 5. このWebアプリケーションを開発した経緯
+
+
+## 6. お問い合わせ
+駆け出しエンジニアの立場で、まだまだ不勉強なためバグが潜んでいるかもしれません。
+改善点などがありましたら、以下のメールアドレスにご連絡いただけると幸いです。
+
+##### ◆メールアドレス:
+samurai.portfolio@gmail.com
+
+また、自作のポートフォリオサイトもありますので、よろしければこちらもご覧ください。
+
+##### ◆Kazuma Iwaiのポートフォリオサイト:
+http://ksamurai.php.xdomain.jp/Portfolio/index.php
+
+## 著者
+2022/06/7 Kazuma Iwai
