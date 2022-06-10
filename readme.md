@@ -12,7 +12,7 @@ Herokuにデプロイしているので、よろしければこちらをご覧�
 ## 2. 技術要素
 
 - 開発環境 AWS Cloud9 / Amazon Linux AMI
-- HTML5/CSS3
+- HTML5 / CSS3
 - Bootstrap 4.3.1
 - JavaScript / jQuery 3.3.1
 - PHP 7.2.34
@@ -21,6 +21,11 @@ Herokuにデプロイしているので、よろしければこちらをご覧�
 - 画像の保存 AWS / S3
 - バージョン管理 Git / GitHub
 - デプロイ Heroku: https://larabel-instagram-again.herokuapp.com/
+
+##### ※以下のダミーユーザーを使ってログインしてご利用ください。
+- 名前: 侍 太郎
+- メールアドレス: samurai@gmail.com
+- パスワード: samurai
 
 ## 2. 機能一覧
 #### (1) ユーザー関連
@@ -50,11 +55,7 @@ Herokuにデプロイしているので、よろしければこちらをご覧�
 - 各種入力値に関するバリデーション機能
 - 不正アクセス防止機能
 
-## 3. このアプリのデータベース設計図
-
-
-
-## 4. このアプリの画像資料
+## 3. このアプリの画像資料
 ※コンテンツが多いため一部を紹介いたします。
 
 ##### ⓵最初の画面
@@ -72,7 +73,10 @@ Herokuにデプロイしているので、よろしければこちらをご覧�
 ##### ⓹いいね投稿ランキング画面
 ![いいね投稿ランキング](/public/images/sample_5.jpg)
 
-## 5. お問い合わせ
+##### ⓺このアプリのデータベース図
+![このアプリのデータベース図](/public/images/instagram_database.jpg)
+
+## 4. お問い合わせ
 駆け出しエンジニアの立場で、まだまだ不勉強なためバグが潜んでいるかもしれません。
 改善点などがありましたら、以下のメールアドレスにご連絡いただけると幸いです。
 
@@ -85,4 +89,4 @@ samurai.portfolio@gmail.com
 http://ksamurai.php.xdomain.jp/Portfolio/index.php
 
 ## 著者
-2022/06/7 Kazuma Iwai
+2022/06/10 Kazuma Iwai
