@@ -197,7 +197,7 @@ class LoginControllerTest extends TestCase
     /** @test */
     public function ログアウトすると認証状態が解除される()
     {
-        // factoryを使ってダミーユーザー作成
+        // factoryを使ってダミー会員作成
         $user = factory(User::class)->create();
         // そのユーザーを認証状態にセット
         $this->actingAs($user);

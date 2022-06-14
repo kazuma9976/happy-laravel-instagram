@@ -20,6 +20,7 @@ Herokuにデプロイしているので、よろしければこちらをご覧�
 - Laravel Framework 5.8.38
 - 画像の保存 AWS / S3
 - バージョン管理 Git / GitHub
+- PHPUnit(テストした内容は会員登録、ログインのみ)
 - デプロイ Heroku: https://larabel-instagram-again.herokuapp.com/
 
 ##### ※以下のダミーユーザーを使ってログインしてご利用ください。
