@@ -21,7 +21,7 @@ Herokuにデプロイしているので、よろしければこちらをご覧�
 - 画像の保存 AWS / S3
 - バージョン管理 Git / GitHub
 - PHPUnit(テストした内容は会員登録、ログインのみ)
-- デプロイ Heroku: https://larabel-instagram-again.herokuapp.com/
+- デプロイ Heroku
 
 ##### ※以下のダミーユーザーを使ってログインしてご利用ください。
 - 名前: 侍 太郎
