@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Instagram Clone')
 @section('content')
-    <div class="text-center mb-5">
+    <div class="text-center text-danger mb-5">
         <h1 class="text-primary" id="first">Come on, post your photos!</h1>
     </div>
     <div class="row">
