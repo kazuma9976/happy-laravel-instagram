@@ -29,7 +29,7 @@ jobs:
       - run:
           name: Run PHPUnit
           command: vendor/bin/phpunit
-      #Herokuへのデプロイ
+      #Herokuへデプロイ
       - deploy:
           name: Deploy main to Heroku
           command: |
