@@ -13,9 +13,9 @@
         <header class="mb-4">
             <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
                 @if(Auth::check())
-                <a class="navbar-brand" href="/top">Instagram Clone</a>
+                <a class="navbar-brand" href="/top">Laravel instagram</a>
                 @else
-                <a class="navbar-brand" href="/">Instagram Clone</a>
+                <a class="navbar-brand" href="/">Laravel instagram</a>
                 @endif
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#nav-bar">
                     <span class="navbar-toggler-icon"></span>

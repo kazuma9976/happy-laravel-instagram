@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Instagram Clone')
+@section('title', 'Laravel instagram')
 @section('content')
     <div class="text-center mb-5">
         <h1 class="text-primary" id="first">Come on, post your photos!</h1>
