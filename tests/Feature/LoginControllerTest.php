@@ -219,7 +219,7 @@ class LoginControllerTest extends TestCase
         // ログアウトのリクエストを送る
         $response = $this->get('/logout');
         // ログアウトした画面にリダイレクトするかチェック
-       $response->assertRedirect('/top'); // 変更
+        $response->assertRedirect('/');
     }
 
 }
