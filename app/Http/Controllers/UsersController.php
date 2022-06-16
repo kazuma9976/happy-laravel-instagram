@@ -28,39 +28,45 @@ class UsersController extends Controller
      */
     public function show(User $user)
     {
-        // 注目しているユーザのプロフィールデータ取得
+        // 注目しているユーザーのプロフィールデータ取得
         $profile = $user->profile()->get()->first();
-        // 注目しているユーザの投稿一覧取得
+        // 注目しているユーザーの投稿一覧を取得
         $posts = $user->posts()->orderBy('id', 'desc')->paginate(10);
 
         // view の呼び出し
         return view('users.show', compact('user', 'profile', 'posts'));
     }
     
-    // 注目しているユーザーが、いいね投稿した一覧
+    // 注目しているユーザーがいいね投稿した一覧
     public function favorites($id)
     {
+        // 注目するユーザーの情報を取得
         $user = User::find($id);
+        // 注目するユーザーがいいねした投稿一覧を取得
         $posts = $user->favorites()->orderBy('id', 'desc')->paginate(5);
         
         // viewの呼び出し
         return view('users.favorites', compact('user', 'posts'));
     }
     
-    // フォローしている人の一覧表示
+    // 注目しているユーザーがフォローしているユーザーの一覧表示
     public function followings($id)
     {
+        // 注目するユーザーの情報取得
         $user = User::find($id);
+        // 注目するユーザーがフォローしたユーザー一覧を取得
         $users = $user->followings()->paginate(10);
         
         // viewの呼び出し
         return view('users.followings', compact('user', 'users'));
     }
     
-    // フォローしている人の一覧表示
+    // 注目しているユーザーのフォローワーの一覧表示
     public function followers($id)
     {
+        // 注目するユーザーの情報取得
         $user = User::find($id);
+        // 注目するユーザーのフォローワー一覧を取得
         $users = $user->followers()->paginate(10);
         
         // viewの呼び出し
@@ -70,7 +76,7 @@ class UsersController extends Controller
     // タイムラインデータ表示
     public function timelines()
     {
-        //　タイムラインデータ取得
+        //　タイムラインデータ取得 (ログインしているユーザーの投稿と、フォローしているユーザーの投稿一覧を取得)
         $posts = \Auth::user()->feed_microposts()->orderBy('id', 'desc')->paginate(5);
         
         // viewの呼び出し

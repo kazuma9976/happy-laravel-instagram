@@ -9,11 +9,14 @@
         <div class="col-sm-6 offset-sm-3 mt-5">
             <!--投稿を更新するためPUTメソッドを使う-->
             {!! Form::open(['route' => ['posts.update', 'id' => $post->id], 'files' => true, 'method' => 'PUT' ]) !!}
+                
+                <!-- 1行 -->
                 <div class="form-group">
                     {!! Form::label('title', '1. タイトル') !!}
                     {!! Form::text('title', $post->title ? $post->title : old('title'), ['class' => 'form-control']) !!}
                 </div>
-
+                
+                <!-- 1行 -->
                 <div class="form-group">
                     {!! Form::label('content', '2. 内容') !!}
                     {!! Form::text('content', $post->content ? $post->content : old('content'), ['class' => 'form-control']) !!}
@@ -22,7 +25,8 @@
                 <!-- 現在投稿されている画像を表示 -->
                 <p class="text-success mt-4">※現在登録されている画像</p>
                 <img src="{{ Storage::disk('s3')->url('uploads/' . $post->image) }}" alt="{{ $post->image }}" class="now_img">
-
+                
+                <!-- 1行 -->
                 <div class="form-group mt-4">
                     {!! Form::label('image', '3. 画像') !!}<br>
                     {!! Form::file('image', ['class' => 'form-control', 'id' => 'preview-uploader']) !!}

@@ -9,20 +9,23 @@
         <div class="col-sm-6 offset-sm-3 mt-5">
 
             {!! Form::open(['route' => ['posts.store'], 'files' => true]) !!}
+                
+                <!-- 1行 -->
                 <div class="form-group">
                     {!! Form::label('title', '1. タイトル') !!}
                     {!! Form::text('title', old('title'), ['class' => 'form-control']) !!}
                 </div>
-
+                
+                <!-- 1行 -->
                 <div class="form-group">
                     {!! Form::label('content', '2. 内容') !!}
                     {!! Form::text('content', old('content'), ['class' => 'form-control']) !!}
                 </div>
-
+                
+                <!-- 1行 -->
                 <div class="form-group">
                     {!! Form::label('image', '3. 画像') !!}<br>
                     {!! Form::file('image', ['class' => 'form-control', 'id' => 'preview-uploader']) !!}
-                    
                     <!-- 画像プレビュー -->
                     <div id="preview" class="mt-3"></div>
                 </div>

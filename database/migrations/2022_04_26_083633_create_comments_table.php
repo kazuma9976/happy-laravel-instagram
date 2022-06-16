@@ -22,8 +22,6 @@ class CreateCommentsTable extends Migration
             
             // 外部キー制約
             $table->foreign('user_id')->references('id')->on('users');
-            // 投稿画像は削除される処理があるので、それと同時にコメントも削除されるように設定
-            // ref) https://qiita.com/aminevsky/items/0cd41d86f61b01ef8141
             $table->foreign('post_id')->references('id')->on('posts')->onDelete('cascade');
         });
     }

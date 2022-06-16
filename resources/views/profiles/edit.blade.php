@@ -9,11 +9,14 @@
         <div class="col-sm-6 offset-sm-3 mt-5">
             <!--プロフィールを更新するため、methodはPUTを使う-->
             {!! Form::open(['route' => ['profiles.update', 'id' => $profile->id] ,'files' => true, 'method' => 'PUT']) !!}
+                
+                <!-- 1行 -->
                 <div class="form-group">
                     {!! Form::label('nickname', '1. ニックネーム') !!}
                     {!! Form::text('nickname', $profile->nickname ? $profile->nickname : old('nickname'),['class' => 'form-control']) !!}
                 </div>
-
+                
+                <!-- 1行 -->
                 <div class="form-group">
                     {!! Form::label('gender', '2. 性別') !!}<br>
                     {!! Form::radio('gender', 'man', $profile->gender === 'man' ? true : false, ['id' => 'man', 'class' => 'offset-2']) !!}
@@ -21,13 +24,14 @@
                     {!! Form::radio('gender', 'woman', $profile->gender === 'woman' ? true : false, ['id' => 'woman', 'class' => 'offset-2']) !!}
                     {!! Form::label('woman', '女性') !!}
                 </div>
-
+                
+                <!-- 1行 -->
                 <div class="form-group">
                     {!! Form::label('introduction', '3. 自己紹介') !!}
                     {!! Form::text('introduction', $profile->introduction ? $profile->introduction : old('introduction'), ['class' => 'form-control']) !!}
                 </div>
 
-                <!--そのユーザーのプロフィールがあるならばアバターアイコンを表示させる-->
+                <!--そのユーザーのプロフィールの画像があるならばアバターアイコンを表示させる-->
                 @if($profile->image)
                 <p class="text-success mt-4">※現在登録されている画像</p>
                 <img src="{{ Storage::disk('s3')->url('uploads/' . $profile->image) }}" alt="{{ $profile->image }}" class="now_avatar">
@@ -37,6 +41,7 @@
                 <img src="{{ asset('images/no_image.jpg') }}" alt="アバター画像は未設定です。" class="now_avatar">
                 @endif
                 
+                <!-- 1行 -->
                 <div class="form-group mt-4">
                     {!! Form::label('image', '4. 画像') !!}<br>
                     {!! Form::file('image', ['class' => 'form-control', 'id' => 'preview-uploader']) !!}

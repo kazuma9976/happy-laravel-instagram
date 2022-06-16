@@ -6,28 +6,21 @@ use Illuminate\Http\Request;
 
 class FavoritesController extends Controller
 {
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  $id
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request, $id)
     {
+        // ログインしているユーザーが、注目する投稿にいいね追加
         \Auth::user()->favorite($id);
+        
+        // 直前ページにリダイレクト
         return back()->with('flash_message', 'いいねしました');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  $id
-     * @return \Illuminate\Http\Response
-     */
     public function destroy($id)
     {
+        // ログインしているユーザーが、注目する投稿にいいね解除
         \Auth::user()->unfavorite($id);
+        
+        // 直前ページにリダイレクト
         return back()->with('flash_message', 'いいねを解除しました');
     }
 }

@@ -1,15 +1,14 @@
 /* global $*/
 $(function(){
+  
   // テキストアニメーション
   const title = $('#first').text();
-  //console.log(title);
   $('#first').text('');
   let count = 1;
+  
   // text_animation関数を定義
   const text_animation = () => {
       const word = title.substr(0, count);
-      // 挙動確認
-      console.log(word);
       $('#first').text(word);
       count++;
       if(count > title.length) {
@@ -22,6 +21,7 @@ $(function(){
   
   // 各種画像のプレビュー表示
   $(document).on('change', '#preview-uploader', function(){
+    
         //操作された要素を取得
         let image = this;
         //ファイルを読み取るオブジェクトを生成
@@ -34,8 +34,9 @@ $(function(){
             //img要素を生成
             let imgTag = `<img src='${fileReader.result}'>`;     
             //画像を表示
-            $(image).next("#preview").html(imgTag);               
+            $(image).next("#preview").html(imgTag);   
+            
         });
-    });
+  });
     
 });

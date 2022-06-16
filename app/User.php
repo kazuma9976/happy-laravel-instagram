@@ -65,8 +65,8 @@ class User extends Authenticatable
         return $this->hasMany(Comment::class);
     }
      
-     // コメント投稿
-     // 会員登録されているあるIDのユーザーが、とある投稿画像に対して、とある内容のコメントをする
+    // コメント投稿
+    // 会員登録されているあるIDのユーザーが、とある投稿画像に対して、とある内容のコメントをする
      public function add_comment($post_id, $content) 
     {
          $comment = new Comment();
@@ -116,7 +116,7 @@ class User extends Authenticatable
         }
     }
     
-     // 注目する投稿がすでにいいねされているか判定
+    // 注目する投稿がすでにいいねされているか判定
     public function is_favorite($post_id)
     {
         return $this->favorites()->where('post_id', $post_id)->exists();
@@ -176,11 +176,14 @@ class User extends Authenticatable
         return $this->followings()->where('follow_id', $userId)->exists();
     }
     
-    // タイムライン表示データ作成
+    // タイムライン表示データ作成(自分の投稿と、フォローしているユーザーの投稿を表示させる)
     public function feed_microposts()
     {
+        // 注目するユーザーがフォローしているユーザーたちのuser_idを取得し、配列に格納
         $follow_user_ids = $this->followings()->pluck('users.id')->toArray();
+        // 注目するユーザーのidも配列に格納
         $follow_user_ids[] = $this->id;
+        // 注目するユーザーとフォローしているユーザーの投稿を取得
         return Post::whereIn('user_id', $follow_user_ids);
     }
     
