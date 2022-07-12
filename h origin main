@@ -1,0 +1,407 @@
+[33mcommit 7980b78f6524e8ff9f50d86a5d866c6c644f672d[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: kazuma iwai <issin.doku2442@gmail.com>
+Date:   Tue Jul 12 11:03:39 2022 +0900
+
+    CircleCI環境設定完了
+
+[33mcommit 6021f819a2bf54c7b4d4a3f532e434e8c8514916[m
+Author: kazuma iwai <issin.doku2442@gmail.com>
+Date:   Tue Jul 12 10:58:50 2022 +0900
+
+    ユーザー関連テスト完了
+
+[33mcommit 295e4ab009d5760abfdf21b07798663b5d4112a6[m
+Author: kazuma iwai <issin.doku2442@gmail.com>
+Date:   Tue Jul 12 10:56:15 2022 +0900
+
+    テスト用データベース作成完了
+
+[33mcommit 1917e4a18439c627e3cb8c31bb3b2d523175cbf1[m[33m ([m[1;31mheroku/main[m[33m)[m
+Author: kazuma iwai <issin.doku2442@gmail.com>
+Date:   Tue Jul 12 10:44:39 2022 +0900
+
+    Heroku用にProcfileを追加
+
+[33mcommit 475fc954eedea70099c275d18b6cef24547c8cf4[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Fri Jul 8 09:39:06 2022 +0900
+
+    メアド変更
+
+[33mcommit 01b1d779aceba3e8fba6d13a9a3e077539a1cad7[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 21 19:51:04 2022 +0900
+
+    readme.mdファイル修正
+
+[33mcommit 39c2c452e4f3c8018f39cca9216addf60c29b9eb[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 21 13:32:15 2022 +0900
+
+    Controllerの不要な部分を削除
+
+[33mcommit 918cbb49e5aec71d7a5a2eec9d945cffd8ea7d87[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Fri Jun 17 08:26:10 2022 +0900
+
+    readme.mdファイルのデータベース図差し替え
+
+[33mcommit 8ab9760b0ecad40146a555aa28a08430d1bf2975[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Thu Jun 16 20:02:28 2022 +0900
+
+    再度CircleCI確認
+
+[33mcommit dec696c58c8abc274c9b1aed27a76afe05f6b565[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Thu Jun 16 19:57:54 2022 +0900
+
+    EC2デプロイ再度確認
+
+[33mcommit 2418e2dc54dd6803a398553379a726e10f2fe11f[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Thu Jun 16 19:34:02 2022 +0900
+
+    CircleCI
+
+[33mcommit a5319ba1db0b26db96d2032405d8b9f52504a31d[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Thu Jun 16 17:36:51 2022 +0900
+
+    CircleCI
+
+[33mcommit 05bfa94e2e71b363fe712f9eb98e93dc0ca848ee[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Thu Jun 16 16:51:00 2022 +0900
+
+    再プッシュ
+
+[33mcommit fa9ea108e05f96faf6ebfb7017c80a1aff5f06c2[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Thu Jun 16 16:43:08 2022 +0900
+
+    CircleCI
+
+[33mcommit 1999cd716d0ad2286bc3075bc8da000a0a7abf46[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Thu Jun 16 16:14:39 2022 +0900
+
+    コメント、インデントの修正、一部Bootstrap修正
+
+[33mcommit 880d41a0e9f45961eb1d1738c4253ff51984e1a7[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Wed Jun 15 11:16:02 2022 +0900
+
+    readme.mdファイル修正
+
+[33mcommit 5d8a4d4088c94747e833012ba0fb7197360b7129[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 16:11:18 2022 +0900
+
+    readme.md修正
+
+[33mcommit 0c67dc333a7879c4f0275288ce01d756ba77e911[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 16:10:05 2022 +0900
+
+    readme.mdファイルの画像を差し替え
+
+[33mcommit a83428fb94f9e50eb82f088c016a45824b583236[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 16:00:26 2022 +0900
+
+    readme.mdファイル修正
+
+[33mcommit f444901e565e7cc82c6b6cd5ce095ec6b9d494cf[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 15:45:01 2022 +0900
+
+    config.yml修正
+
+[33mcommit 54c0467ea6e3f1b6586ab0f16002670275b471ae[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 15:40:19 2022 +0900
+
+    CircleCIでEC2インスタンスへの自動デプロイ設定完了
+
+[33mcommit 3a5a758b6205ca4da30be964afe2821452a6dd3a[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 11:25:26 2022 +0900
+
+    EC2デプロイ用に変更
+
+[33mcommit 20817e1a815b5ffd5df81056e091995d57777932[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:46:12 2022 +0900
+
+    Heroku自動デプロイ確認
+
+[33mcommit 679afc64f0f8abb5d08ca9d72bbc32af1b56331e[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:42:33 2022 +0900
+
+    Heroku自動デプロイ確認
+
+[33mcommit a5beec4524b13ceb29adb443dcf763c9c32168ae[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:40:37 2022 +0900
+
+    CircleCI
+
+[33mcommit 24385ee248083f271a65d5f523ac2f6195cc1d2a[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:31:00 2022 +0900
+
+    welcome.blade.phpの変形
+
+[33mcommit 2b2ea3215a14e1365f7630e4e457aa6977fbb8f2[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:29:27 2022 +0900
+
+    CircleCI自動デプロイ設定完了
+
+[33mcommit 6793deb88e41cf5517148bafc1aed2627bec4308[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:23:52 2022 +0900
+
+    CircleCIエラーを復旧する
+
+[33mcommit bcc2ce336b707613fc01669c1c3bf798f7fdc357[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:22:53 2022 +0900
+
+    CircleCIエラーテスト
+
+[33mcommit f369fd0c35988df12f2d1e96cd21181965322c48[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:19:42 2022 +0900
+
+    再push
+
+[33mcommit 7fe1bbdfb9ba232f4ada7e1f791168e0e697bead[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:16:34 2022 +0900
+
+    CircleCI環境設定完了
+
+[33mcommit d9fe11acac112699b4f5825aaf188dabc8b6d564[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:09:23 2022 +0900
+
+    readme.md追記
+
+[33mcommit 7e36658f0f8aa0802acb89a6102b02dd1224e06b[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 10:06:58 2022 +0900
+
+    会員関連テスト完了
+
+[33mcommit 00fc7465e25047cee83ddab85864f93ec8ecb63e[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 14 09:38:37 2022 +0900
+
+    テスト用データーベース作成完了
+
+[33mcommit 5ab4d050fe374b6e643ae29c6c6bdada21416239[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Fri Jun 10 11:08:41 2022 +0900
+
+    readme.mdファイル修正
+
+[33mcommit 13530e9558f5d8fdccb1c191d6ed2a3cd641f15a[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 7 14:22:01 2022 +0900
+
+    投稿削除にonclick属性追加
+
+[33mcommit 570be175c410ce7099619ad4b1d37c94cd508cdd[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 7 11:16:57 2022 +0900
+
+    Heroku部分修正
+
+[33mcommit 2ba3971bc6539eaea8fec1a9abb4eee206717663[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 7 11:15:48 2022 +0900
+
+    タイトル修正
+
+[33mcommit d27fa2892d074c7b852d82c6fd6992896c11d8f4[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 7 11:14:52 2022 +0900
+
+    readme.md(データベース図以外)大枠作成
+
+[33mcommit abf17e9c56820c94c96c2313f9018221e178c064[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Tue Jun 7 10:27:16 2022 +0900
+
+    検索機能の修正、プロフィール画像
+
+[33mcommit c8de941dda81105aee7e77450d9d5d8be2b3fa1a[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Mon Jun 6 09:58:25 2022 +0900
+
+    ファイルの削除
+
+[33mcommit dfc66023182ea7bf689cc773544a962756f0963b[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Mon Jun 6 09:55:56 2022 +0900
+
+    不要なファイルを削除
+
+[33mcommit dd3b99bf63e1ebd0ff1b07f77db1362db9955fe6[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Mon Jun 6 09:30:10 2022 +0900
+
+    画像のcssのheight削除
+
+[33mcommit 86996ea9938a31cd2a1721c0175b273f5b2a5199[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Mon Jun 6 09:18:20 2022 +0900
+
+    Heroku 詳細情報修正
+
+[33mcommit 84ff18c7deb8567675ee1262808d9f18497db0d7[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Sat Jun 4 09:29:46 2022 +0900
+
+    Heroku用にProcfileを追加
+
+[33mcommit 1eee4a13d87ff6f8c9482d550730a77190837c91[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Sat Jun 4 09:24:19 2022 +0900
+
+    Heroku用にProcfileを追加
+
+[33mcommit 4a038e4e738026fdadb7c546557be5009f5be701[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Fri Jun 3 20:45:16 2022 +0900
+
+    Herokuデプロイに躓く
+
+[33mcommit feba6117e316ad6e3bd77681585e0e505ad955c1[m
+Author: Kazuma Iwai <samuraikazuma1@gmail.com>
+Date:   Fri Jun 3 20:04:16 2022 +0900
+
+    S3再設定
+
+[33mcommit 891f81253a0e92ef68ee9b92c8c66a9407040de5[m
+Author: EC2 Default User <ec2-user@ip-172-31-42-230.ec2.internal>
+Date:   Fri Jun 3 20:01:59 2022 +0900
+
+    S3再設定
+
+[33mcommit 55808b71f41a5d5a1dfc426ca26379fe45c5fdf8[m
+Author: Kazuma <kazuma.aws1207@gmail.com>
+Date:   Thu Jun 2 11:06:12 2022 +0900
+
+    テスト確認、git ingnore ok
+
+[33mcommit 5e72d6bac106b2b9495161bc3e34ebe46b584c51[m
+Author: Kazuma <kazuma.aws1207@gmail.com>
+Date:   Thu Jun 2 09:31:31 2022 +0900
+
+    S3設定復活
+
+[33mcommit a2a821184ac54bad12951c7f977a9e871687c8b7[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 11:33:39 2022 +0900
+
+    CircleCI自動デプロイ設定完了
+
+[33mcommit 1504de47b7267c1dcd77179e595ca7c9510521e4[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 11:21:48 2022 +0900
+
+    navの固定を解除
+
+[33mcommit fb644b673ec12f9be80392222f0f59684b476edc[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 11:08:46 2022 +0900
+
+    ユーザー関連テストを実行しデータベースを空にした
+
+[33mcommit 3e7b82398ce44efe572ad7224853df7e06105184[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 11:06:34 2022 +0900
+
+    ユーザー関連テスト完了
+
+[33mcommit e032a1e88b82b7358f762fce1bc0a3f91551c4f4[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 10:56:42 2022 +0900
+
+    テスト用データベース作成完了
+
+[33mcommit a3511d0d3887322464f3662c6777b6bdd5503762[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 10:50:17 2022 +0900
+
+    CircleCI環境設定の修正
+
+[33mcommit af9490a1a8f8ba2d829b84e32eea9d5e789f6be1[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 10:45:11 2022 +0900
+
+    CircleCI環境設定完了
+
+[33mcommit aec0e0a4afb068fb1a893da7a39ed0dfdc115935[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Tue May 31 09:48:03 2022 +0900
+
+    画像プレビュー、バリデーション、マイグレーション修正
+
+[33mcommit 42dc6482d521632961e42fdd9af10f3ad95c7344[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Thu May 12 10:41:19 2022 +0900
+
+    /Laravel-instagram/app/User.phpタイムライン表示データメソッド訂正
+
+[33mcommit 6e1b8cb3b8ad4ebb5b2d53d9e3d1b94982d03976[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Wed May 11 11:37:05 2022 +0900
+
+    一部文字を訂正
+
+[33mcommit c0b6597d393ef80533fc8367501b42ab969880e0[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Wed May 11 11:29:23 2022 +0900
+
+    各種文字を訂正
+
+[33mcommit 8fcf2acbaa8bf6c594b44feb3c3abdabb58e509e[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Wed May 11 11:15:16 2022 +0900
+
+    投稿詳細のレイアウト、エラー・フラッシュメッセージのレイアウト、日本語訳修正
+
+[33mcommit a701e0fc972aee19364187eb035e3a789c755ed7[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Sat May 7 10:09:58 2022 +0900
+
+    HTML/CSS微調整完了
+
+[33mcommit 9badacf6669f605072e2b233046b2470d5cdab61[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Fri May 6 21:15:20 2022 +0900
+
+    Heroku用にProcfileを追加
+
+[33mcommit 7a45b122d7b4c11a583432aeb38020bc4728f846[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Fri May 6 21:01:08 2022 +0900
+
+    css微調整
+
+[33mcommit b4bbe0bc1f8080d66b279ee53ed98f5c78cad28e[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Fri May 6 18:08:29 2022 +0900
+
+    navの調整、テキストアニメーションの追加
+
+[33mcommit 4526fb8b452bb26ee4d7b5290131659b4b6e8ddc[m
+Author: iwai <issin.doku2442@gmail.com>
+Date:   Fri May 6 17:20:06 2022 +0900
+
+    再コミット
