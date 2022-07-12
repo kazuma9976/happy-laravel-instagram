@@ -23,6 +23,8 @@
 - PHPUnit(新規会員登録機能、ログイン機能のみ) 
 - CircleCI (Heroku、EC2への自動デプロイ)
 - デプロイ Heroku / EC2
+- AWS Elastic IP
+- AWS Route53
 - EC2にデプロイしたもの: http://laravel-instagram.net/
 
 ##### ※以下のダミーユーザーを使ってログインしてご利用ください。
