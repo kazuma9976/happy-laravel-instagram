@@ -23,7 +23,7 @@
 - PHPUnit(新規会員登録機能、ログイン機能のみ) 
 - CircleCI (Heroku、EC2への自動デプロイ)
 - デプロイ Heroku / EC2
-- EC2にデプロイしたもの: http://ec2-35-78-81-161.ap-northeast-1.compute.amazonaws.com/
+- EC2にデプロイしたもの: http://ec2-18-181-186-113.ap-northeast-1.compute.amazonaws.com/
 
 ##### ※以下のダミーユーザーを使ってログインしてご利用ください。
 - 名前: 侍 太郎
