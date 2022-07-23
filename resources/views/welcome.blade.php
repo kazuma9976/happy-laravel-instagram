@@ -2,7 +2,7 @@
 @section('title', 'Laravel instagram')
 @section('content')
     <div class="text-center mb-5">
-        <h1 class="text-primary" id="first">Come on, post your photos!</h1>
+        <h1 class="text-danger" id="first">Come on, post your photos!</h1>
     </div>
     <div class="row">
         @foreach($posts as $post)
