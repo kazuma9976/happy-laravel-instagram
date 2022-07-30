@@ -23,7 +23,7 @@
 - PHPUnit(新規会員登録機能、ログイン機能のみ) 
 - CircleCI (Herokuの自動デプロイ)
 - デプロイ Heroku
-- Herokuにデプロイしたもの: https://instagram-note.herokuapp.com/
+- Herokuにデプロイしたもの: https://laravel-instagram-note.herokuapp.com/
 
 ##### ※以下のダミーユーザーを使ってログインしてご利用ください。
 - 名前: 侍 太郎
