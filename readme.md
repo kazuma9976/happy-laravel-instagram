@@ -23,7 +23,7 @@
 - PHPUnit(新規会員登録機能、ログイン機能のみ) 
 - CircleCI (Herokuの自動デプロイ)
 - デプロイ Heroku
-- Herokuにデプロイしたもの: https://laravel-instagram-note.herokuapp.com/
+- Herokuにデプロイしたもの: https://app-laravel-instagram.herokuapp.com/
 
 ##### ※以下のダミーユーザーを使ってログインしてご利用ください。
 - 名前: 侍 太郎
@@ -93,4 +93,4 @@ happyday.kazuma@outlook.jp
 http://ksamurai.php.xdomain.jp/Portfolio/index.php
 
 ## 著者
-2022/07/21 Kazuma Iwai
+2022/07/31 Kazuma Iwai
